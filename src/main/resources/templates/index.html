@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Cassandra Lan Party Configurer</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet"/>
+
+        <!-- Custom styles for this template -->
+        <link href="css/starter-template.css" rel="stylesheet"/>
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="js/html5shiv.min.js"></script>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
+    </head>
+</head>
+
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">Cassandra Lan party Configurer</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/cassandra">Cassandra</a></li>
+                <li><a href="/archive">Archive</a></li>
+                <li><a href="/cluster">Current cluster</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container">
+
+    <div class="starter-template">
+        <h1>Welcome to the Cassandra Lan Party Configurer</h1>
+        <p class="lead">This application will help you to setup Cassandra on tour laptop</p>
+    </div>
+
+    <div class="alert alert-danger center">
+        If you have any problem or any doubt, please call a team member. We are there for that!
+    </div>
+
+    <div class="alert alert-info center" role="alert">
+        <h4> At this stage, You should :</h4>
+        <div>
+            <span class="glyphicon glyphicon-ok"></span> be sitting more or less confortably
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok"></span> have turned off your WIFI
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok"></span> have a sticky note on the wall with your name and your IP
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok"></span> have configured your network parametrers
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok"></span> be connected to the switch with a network cable
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok"></span> have a jdk 1.8 installed on your laptop
+            <br/>
+            <code id="java_version">java -version</code>
+            <button id="java_version_btn" class="btn btn-xs copyable copy-button" data-clipboard-target="#java_version" title="copy to clipboard" data-toggle="tooltip" data-placement="right">
+                <span class="glyphicon glyphicon-copy" aria-hidden="true"/>
+            </button>
+            (<a href="/archive">download of jdk 1.8</a>)
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok"></span> be able to ping those addresses :
+            <br/>
+            <code id="ping_1">ping 10.1.1.1</code>
+            <button id="ping_1_btn" class="btn btn-xs copyable copy-button" data-clipboard-target="#ping_1" title="copy to clipboard" data-toggle="tooltip" data-placement="right">
+                <span class="glyphicon glyphicon-copy" aria-hidden="true"/>
+            </button>
+            <br/>
+            <code id="ping_2">ping 10.2.1.1</code>
+            <button id="ping_2_btn" class="btn btn-xs copyable copy-button" data-clipboard-target="#ping_2" title="copy to clipboard" data-toggle="tooltip" data-placement="right">
+                <span class="glyphicon glyphicon-copy" aria-hidden="true"/>
+            </button>
+            <br/>
+            <code id="ping_3">ping 10.3.1.1</code>
+            <button id="ping3_btn" class="btn btn-xs copyable copy-button" data-clipboard-target="#ping_3" title="copy to clipboard" data-toggle="tooltip" data-placement="right">
+                <span class="glyphicon glyphicon-copy" aria-hidden="true"/>
+            </button>
+            <br/>
+        </div>
+    </div>
+
+    <div class="alert alert-warning center">
+        Your IP is : <code th:text="${userIp}"/>
+        <br/>
+        If it's not the one written on your sticky note, call a team member
+    </div>
+
+    <div class="center">
+        <a href="/cassandra" class="btn btn-success" role="button">Start the installation and the configuration of Cassandra</a>
+        <br/>
+        <br/>
+    </div>
+
+
+</div>
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/lan-party.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+body {
+  padding-top: 50px;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.code-wrapper {
+  margin-top: 10px;
+  position: relative;
+}
+
+.code-wrapper .copy-button {
+  bottom: 10px;
+  position: absolute;
+  right: 10px;
+}
+
+.code-wrapper pre {
+  color: #c7254e;
+  background-color: #f9f2f4;
+  padding-right: 30px;
+  white-space: pre-wrap;
+}

@@ -1,0 +1,5 @@
+download the artifacts in the same folder
+
+jdk-8u221-windows-i586.exe : https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+7z1900.exe : https://www.7-zip.org/a/7z1900.exe
+python-2.7.16.msi : https://www.python.org/ftp/python/2.7.16/python-2.7.16.msi

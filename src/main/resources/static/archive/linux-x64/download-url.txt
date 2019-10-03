@@ -1,0 +1,3 @@
+download the artifacts in the same folder
+
+jdk-8u221-linux-x64.tar.gz: https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html

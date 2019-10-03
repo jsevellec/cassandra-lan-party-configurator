@@ -1,0 +1,3 @@
+download the artifacts in the same folder
+
+apache-cassandra-3.11.4-bin.tar.gz : http://www.apache.org/dyn/closer.lua/cassandra/3.11.4/apache-cassandra-3.11.4-bin.tar.gz
