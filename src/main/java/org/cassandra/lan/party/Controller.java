@@ -75,11 +75,11 @@ public class Controller {
                         (host1.getDatacenter() + host1.getBroadcastAddress().toString())
                                 .compareTo(host2.getDatacenter() + host2.getBroadcastAddress().toString()))
                 .collect(Collectors.toList());
-        String noeud = "noeud";
+        String node = "node";
         if (allHosts.size() > 1) {
-            noeud = "noeuds";
+            node = "nodes";
         }
-        model.addAttribute("clusterSize", allHosts.size() + " " + noeud);
+        model.addAttribute("clusterSize", allHosts.size() + " " + node);
         model.addAttribute("hosts", sortedHosts);
         return "cluster";
     }
