@@ -1,4 +1,4 @@
-# cassandra-lan-party-configurer
+# Casssandra Lan Party Configurer
 application that ease the setup of a Cassandra Lan Party
 
 The application is a simple Spring boot + Thymeleaf web application
