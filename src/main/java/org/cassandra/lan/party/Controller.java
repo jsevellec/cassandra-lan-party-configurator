@@ -23,8 +23,8 @@ public class Controller {
     @Resource
     private CassandraService cassandraService;
 
-    @Value("${ip.app.configurer}")
-    private String appConfigurerIp;
+    @Value("${ip.app.configurator}")
+    private String appConfiguratorIp;
 
     public static final String DUMMY_USER_HOST = "10.1.1.0";
 

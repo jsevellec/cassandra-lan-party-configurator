@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CassandraLanPartyConfigurerApplication {
+public class CassandraLanPartyConfiguratorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CassandraLanPartyConfigurerApplication.class, args);
+		SpringApplication.run(CassandraLanPartyConfiguratorApplication.class, args);
 	}
 }

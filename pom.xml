@@ -4,12 +4,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.cassandra.lan.party</groupId>
-	<artifactId>cassandra-lan-party-configurer</artifactId>
+	<artifactId>cassandra-lan-party-configurator</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>cassandra-lan-party-configurer</name>
-	<description>Cassandra Lan party configurer</description>
+	<name>cassandra-lan-party-configurator</name>
+	<description>Cassandra Lan party configurator</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -43,7 +43,7 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.datastax.cassandra</groupId>
 			<artifactId>cassandra-driver-core</artifactId>
